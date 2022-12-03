@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Information</title>
+</head>
+<script>
+    function dieu_huong()
+    {
+        location.assign("form.htm");
+    }
+</script>
+<body>
+<form action="config.php" method="POST" style="margin: 5% 32%; width: 500px;">
+    <fieldset>
+        <legend><b>Enter Your Information</b></legend>
+        <table>
+            <tr>
+                <td>Fullname</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="nam" checked>Nam
+                    <input type="radio" name="gender" value="nu">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="vietnam">Việt Nam</option>
+                        <option value="japan">Nhật Bản</option>
+                        <option value="korea">Hàn Quốc</option>
+                        <option value="thais">Thái Lan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Study</td>
+                <td>
+                    <input type= "checkbox" name= "study1" value="PHP&MySQL"> <label for="study1">PHP & MySQL</label>   
+                    <input type= "checkbox" name= "study2" value="APS.NET"> <label for="study2">APS.NET</label>   
+                    <input type= "checkbox" name= "study3" value="CCNA"> <label for="study3">CCNA</label>   
+                    <input type= "checkbox" name= "study4" value="Security+"> <label for="study4">Security+</label>   
+                </td>
+            </tr>
+            <tr>
+                <td>Note</td>
+                <td>
+                    <textarea rows="5" cols="48" name="note"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type ="submit" name ="submit" value ="Gửi">
+                    <button type="button" onclick="dieu_huong()">Hủy</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
